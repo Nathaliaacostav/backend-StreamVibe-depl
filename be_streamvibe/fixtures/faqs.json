@@ -1,0 +1,66 @@
+[
+  {
+    "model": "be_streamvibe.Faq",
+    "pk": 1,
+    "fields":{
+      "question": "What is StreamVibe?",
+      "answer": "StreamVibe is a web application that allows you to stream movies and TV shows online, similar to Netflix."
+    }
+  },
+  {
+    "model": "be_streamvibe.Faq",
+    "pk": 2,
+    "fields":{
+      "question": "How much does StreamVibe cost?",
+      "answer": "StreamVibe offers different subscription plans starting at $9.99 per month."
+    }
+  },
+  {
+    "model": "be_streamvibe.Faq",
+    "pk": 3,
+    "fields":{
+      "question": "What content is available on StreamVibe?",
+      "answer": "StreamVibe offers a wide range of movies, TV shows, documentaries, and exclusive original content."
+    }
+  },
+  {
+    "model": "be_streamvibe.Faq",
+    "pk": 4,
+    "fields":{
+      "question": "How can I watch StreamVibe?",
+      "answer": "You can watch StreamVibe on your computer, smartphone, tablet, or smart TV through the StreamVibe app or website."
+    }
+  },
+  {
+    "model": "be_streamvibe.Faq",
+    "pk": 5,
+    "fields":{
+      "question": "How do I sign up for StreamVibe?",
+      "answer": "To sign up for StreamVibe, visit our website, click on 'Sign Up,' and follow the instructions to create an account."
+    }
+  },
+  {
+    "model": "be_streamvibe.Faq",
+    "pk": 6,
+    "fields":{
+      "question": "What is the StreamVibe free trial?",
+      "answer": "StreamVibe offers a 7-day free trial for new users to explore our content before subscribing."
+    }
+  },
+  {
+    "model": "be_streamvibe.Faq",
+    "pk": 7,
+    "fields":{
+      "question": "How do I contact StreamVibe customer support?",
+      "answer": "You can contact StreamVibe customer support through our Help Center on the website or by calling our support hotline at 1-800-STREAMVIBE."
+    }
+  },
+  {
+    "model": "be_streamvibe.Faq",
+    "pk": 8,
+    "fields":{
+      "question": "What are the StreamVibe payment methods?",
+      "answer": "StreamVibe accepts credit and debit cards, PayPal, and other major payment methods."
+    }
+  }
+]
