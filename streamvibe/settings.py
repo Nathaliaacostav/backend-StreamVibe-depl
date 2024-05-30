@@ -13,12 +13,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import cloudinary
 import os
-""" import dj_database_url """
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-""" DATABASE_URL = "postgresql://postgres:fjHSRDKOlyNKsygqPyhmTpKuwGQGVVAT@monorail.proxy.rlwy.net:12377/railway" """
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -28,7 +26,10 @@ SECRET_KEY = 'django-insecure-vip!8_akx9pk$n5bo=54_q6^&ali^lp0t#=uzem@f-#&w_d8xl
 # SECRET_KEY = os.environ.get('SECRET_KEY', default='you secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-ALLOWED_HOSTS = ["*"]
+DEBUG = False
+# Debug = 'RENDER' not in os.environ
+
+ALLOWED_HOSTS = ['localhost','web-production-5cf0.up.railway.app']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
@@ -92,6 +93,13 @@ WSGI_APPLICATION = 'streamvibe.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default='sqlite:///db.sqlite3',
+#         conn_max_age=600
+#     )
+# }
+
 DATABASES = {
     #'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)
 
@@ -104,6 +112,7 @@ DATABASES = {
          'PORT': '34396',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -181,4 +190,3 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
-
