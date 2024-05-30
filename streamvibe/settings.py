@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-vip!8_akx9pk$n5bo=54_q6^&ali^lp0t#=uzem@f-#&w_d8xl
 DEBUG = False
 # Debug = 'RENDER' not in os.environ
 
-ALLOWED_HOSTS = ['localhost','web-production-5cf0.up.railway.app']
+ALLOWED_HOSTS = ["*"]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
@@ -105,11 +105,11 @@ DATABASES = {
 
      'default': {
          'ENGINE': 'django.db.backends.postgresql_psycopg2',
-         'NAME': 'railway',
-         'USER': 'postgres',
-         'PASSWORD': 'ftaYeAjkJMecnMoviPXzMWNlkkiSZkeM',
-         'HOST': 'viaduct.proxy.rlwy.net',
-         'PORT': '53754',
+         'NAME': 'BasededatosStreamVibe',
+         'USER': 'StreamVibe',
+         'PASSWORD': 'StreamVibe123',
+         'HOST': 'database-1.chk6mgiuqbyz.sa-east-1.rds.amazonaws.com',
+         'PORT': '5432',
     }
 }
 
